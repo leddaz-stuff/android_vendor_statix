@@ -165,4 +165,5 @@ ifeq ($(USE_NQ_NFC),true)
     PRODUCT_SOONG_NAMESPACES += vendor/nxp/opensource
 endif
 
+include vendor/statix/build/core/pathmap.mk
 include vendor/statix/build/core/qcom_target.mk
