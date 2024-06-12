@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
 
 # Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUI \
+    Launcher3
 
 # Themepicker
 PRODUCT_PACKAGES += \
