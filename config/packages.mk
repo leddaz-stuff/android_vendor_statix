@@ -8,38 +8,13 @@
 PRODUCT_PACKAGES += \
     librsjni
 
-# StatiX Packages
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig \
-    StatiXOSWalls \
-    QuickAccessWallet
-
-# App overrides
-PRODUCT_PACKAGES += \
-    StatixLauncher \
-    StatixSystemUI \
-    StatixSettings \
-    WallpaperPickerGoogleRelease
-
 # Camera
 PRODUCT_PACKAGES += \
     Aperture
 
-# Preopt StatixSystemUI
+# Preopt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    StatixSystemUI
-
-# Google Pixel Launcher
-ifeq ($(INCLUDE_PIXEL_LAUNCHER),true)
-PRODUCT_PACKAGES += \
-    NexusLauncherRelease
-endif
-
-# Updaters
-ifeq ($(STATIX_BUILD_TYPE),OFFICIAL)
-PRODUCT_PACKAGES += \
-    Updater
-endif
+    SystemUI
 
 # Some useful shell based utilities for Android
 PRODUCT_PACKAGES += \
