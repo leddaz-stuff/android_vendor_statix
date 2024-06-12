@@ -16,6 +16,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
+# Themepicker
+PRODUCT_PACKAGES += \
+    ThemePicker
+
 # Some useful shell based utilities for Android
 PRODUCT_PACKAGES += \
     htop \
