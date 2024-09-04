@@ -11,6 +11,15 @@ ifeq ($(PRODUCT_USES_QCOM_HARDWARE), true)
 include vendor/statix/build/core/ProductConfigQcom.mk
 endif
 
+# GMS
+ifneq ($(TARGET_DOES_NOT_USE_GAPPS), true)
+ifeq ($(TARGET_SUPPORTS_32_BIT_APPS),false)
+$(call inherit-product-if-exists, vendor/partner_gms/products/gms_64bit_only.mk)
+else
+$(call inherit-product-if-exists, vendor/partner_gms/products/gms.mk)
+endif
+endif
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
