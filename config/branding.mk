@@ -54,3 +54,7 @@ ifneq (eng,$(TARGET_BUILD_VARIANT))
         PRODUCT_OTA_PUBLIC_KEYS := $(PROD_CERTS)/otakey.x509.pem
     endif
 endif
+
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.statix.device=$(TARGET_DEVICE) \
+    ro.statix.version=$(STATIX_BASE_VERSION)-$(STATIX_BUILD_TYPE)-$(BUILD_DATE)
