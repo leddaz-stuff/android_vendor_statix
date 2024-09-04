@@ -8,10 +8,6 @@
 PRODUCT_PACKAGES += \
     librsjni
 
-# Browser
-PRODUCT_PACKAGES += \
-    Fennec
-
 # Camera
 PRODUCT_PACKAGES += \
     Aperture
