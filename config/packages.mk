@@ -32,3 +32,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/statix/prebuilt/etc/overlay/config-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/config/config.xml
+
+# Boot animation
+PRODUCT_PACKAGES += \
+    bootanimation.zip
