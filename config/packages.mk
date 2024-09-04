@@ -35,5 +35,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
-
--include vendor/statix/config/overlay.mk
