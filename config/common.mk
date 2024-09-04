@@ -65,6 +65,9 @@ include vendor/statix/config/packages.mk
 # Branding
 include vendor/statix/config/branding.mk
 
+# Fonts
+include vendor/statix/config/fonts.mk
+
 # Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/statix/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/statix/overlay/common
