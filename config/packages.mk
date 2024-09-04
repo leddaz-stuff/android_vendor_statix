@@ -36,3 +36,7 @@ PRODUCT_COPY_FILES += \
 # Boot animation
 PRODUCT_PACKAGES += \
     bootanimation.zip
+
+# Recorder
+PRODUCT_PACKAGES += \
+    Recorder
